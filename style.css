@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#main{
+
+    width: 100%;
+    height: 100%;
+    background-color: #F8F1EC;
+}
+#page1{
+    width: 100%;
+    height: 100%;
+    scale: .8;
+    background-color: #211C0E;
+    position: relative;
+    border-radius: 5px;
+}
+#content button {
+    padding: 1.5vw 3.5vw;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 2.5vw;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-family: manuka;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#texture{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/bg-texture.jpg);
+    position: absolute;
+  
+}
+
+
+#timer {
+    height: 8vw;
+    width: 18vw;
+    overflow: hidden;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+    color: #fff;
+    text-align: right;
+    /* background-color: red; */
+    z-index: 99;
+
+}
+
+#timer h1 {
+    font-size: 7vw;
+    font-weight: 800;
+    font-family: manuka;
+    transition-delay: 1s;
+    transition: all ease 0.8s;
+}
+
+#page1 button {
+    padding: 1vw 1.2vw;
+    font-size: 2.4vw;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition-delay: 1s;
+    transition: all ease 0.8s;
+    font-weight: 900;
+    /* margin-left: -5vw; */
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    /* top: 0; */
+    bottom: -100%;
+    transition: all ease 0.4s;
+    left: 0;
+}
+
+button:hover::after {
+    bottom: 0;
+}
+
+button span {
+    position: relative;
+    transition: all ease 0.4s;
+    z-index: 9;
+}
+
+button:hover span {
+    color: #000;
+}
+
+
+#content {
+   
+    position: relative;
+    z-index: 9;
+    color: #F8F0EC;
+    padding: 4vw 4vw;
+    padding-top: 8vw;
+}
+
+#content h1 {
+    font-family: manuka;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 22vw;
+    line-height: 18vw;
+}
+
+#content h1 span {
+    font-weight: 900;
+}
+
+
+#content #patti {
+    height: 40vw;
+    position: absolute;
+    top: 7%;
+    rotate: -5deg;
+    z-index: 8;
+    left: 15%;
+}
+
+#content #log {
+    height: 28vw;
+    position: absolute;
+    top: 7%;
+    rotate: 3deg;
+    z-index: 7;
+    left: 51%;
+    opacity: 0;
+}
+
+
+#orangegola{
+    position: absolute;
+    top: 75%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    opacity: 0;
+   
+}
+#orangegola img{
+    width: 11vw;
+}
+#golatxt{
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
+    
+}
+#orangegola h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.3vw;
+    font-weight: 500;
+    font-family: manuka;
+   line-height: 1;
+    text-align: center;
+}
+#orangegola h1 span{
+    font-family: manuka;
+    font-weight: 600;
+}
+
+#para p{
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #fff;
+    width: 28%;
+    position: absolute;
+    bottom: 6%;
+    right: 1%;
+    opacity: 0;
+}
+
+
+
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F1EC;
+}
+#page2 video{
+    margin-top: 6vw;
+    width: 100%;
+    height: 110vh;
+    border-radius: .6vw;
+    opacity: 0;
+ 
+}
+#page2-part1{
+    width: 100%;
+    height: 55vh;
+    background-color: #211C0E;
+}
+#page3{
+    flex-wrap: nowrap;
+    margin-top: 17vw;
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F1EC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    position: relative;
+ 
+   
+}
+#page3-part1{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    flex-shrink: 0;
+}
+#page3-part1 h1{
+    
+    padding: 1vw 3vw;
+    letter-spacing: 1px;
+    line-height: 4.9vw;
+   color: #E3DBD5;
+   font-size: 4.5vw;
+   font-weight: 800;
+   font-family: manuka;
+}
+#page3-part2{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    flex-shrink: 0;
+   
+
+}
+#page3-part3{
+    background-color: aqua;
+    min-width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+
+
+}
